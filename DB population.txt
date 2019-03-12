@@ -1,0 +1,41 @@
+INSERT INTO Staff VALUES (1, 'Peon');
+INSERT INTO Staff VALUES (2, 'Imp');
+INSERT INTO Staff VALUES (3, 'Void Walker');
+INSERT INTO Staff VALUES (4, 'Ghoul');
+INSERT INTO Staff VALUES (5, 'Water Elemental');
+
+INSERT INTO Product VALUES (1, 'Fel Magic');
+INSERT INTO Product VALUES (2, 'Mana');
+INSERT INTO Product VALUES (3, 'Undead');
+INSERT INTO Product VALUES (4, 'Hammer');
+INSERT INTO Product VALUES (5, 'Zerg');
+
+INSERT INTO Customer VALUES (1, 'Gul-Dan', 'gd@wow.com');
+INSERT INTO Customer VALUES (2, 'Kael Thas', 'kt@wow.com');
+INSERT INTO Customer VALUES (3, 'Arthas Menethil', 'am@wow.com');
+INSERT INTO Customer VALUES (4, 'Muradin Bronzebeard', 'mb@wow.com');
+INSERT INTO Customer VALUES (5, 'Sarah Kerrigan', 'sk@wow.com');
+INSERT INTO Customer VALUES (6, 'Sylvanas Windrunner', 'sw@wow.com');
+
+INSERT INTO Ticket VALUES (1, 'My Fel does not work on humans.', 'Open', 2, '2018-01-01 12:30:00', 1, 1);
+INSERT INTO Ticket VALUES (2, 'Insufficient mana to cleanse the world.', 'Open', 1, '2018-02-14 01:15:32', 2, 2);
+INSERT INTO Ticket VALUES (3, 'The scourge does not grow fast enough.', 'Open', 3, '2018-03-21 12:12:14', 3, 3);
+INSERT INTO Ticket VALUES (4, 'My hammer cracked the scull of an undead open, but it got blood on it. I want it to be clean at all times.', 'Open', 3, '2018-02-12 01:00:10', 4, 4);
+INSERT INTO Ticket VALUES (5, 'Zergs never make their bed!', 'Closed', 1, '2018-01-23 09:10:52', 5, 5);
+INSERT INTO Ticket VALUES (6, 'Fel magic consumes too much mana, makes undeads vulnerable to hammers and attracts Zerg', 'Open', 1, '2018-02-12 11:10:07', 6, 1);
+
+INSERT INTO TicketUpdate VALUES (1, 'Fel works on humans, however mages have powerful defensive spells', '2018-01-01 16:00:32', 1,1 );
+INSERT INTO TicketUpdate VALUES (2, 'It is recommended to bring a few mana pools with you, when going on the quest.', '2018-02-14 04:00:15', 2,2 );
+INSERT INTO TicketUpdate VALUES (3, 'You should invade a capital where more casualties can be inflicted.', '2018-03-28 12:12:44', 3,3 );
+INSERT INTO TicketUpdate VALUES (4, 'You could coat it with bronze, which dissolves any liquified substance it connects to.', '2018-02-12 03:00:51', 4,4 );
+INSERT INTO TicketUpdate VALUES (5, 'Zerg does not have beds. Try IKEA and then teach them habits of making them.', '2018-01-23 10:00:05', 5,5 );
+INSERT INTO TicketUpdate VALUES (6, 'Do not use it then. Try to conquer the world of Warcraft differently.', '2018-02-23 10:13:21', 6,2 );
+INSERT INTO TicketUpdate VALUES (7, 'Try using "thereisnospoon" cheat.', '2018-03-21 10:13:21', 2,2 );
+INSERT INTO TicketUpdate VALUES (8, 'Nevermind, I am just too needy.', '2018-04-21 10:13:21', 3, null );
+INSERT INTO TicketUpdate VALUES (9, 'Do not use it then. Try to conquer the world of Warcraft differently.', '2018-02-12 11:13:21', 6,2 );
+INSERT INTO TicketUpdate VALUES (10, 'Testing Data ', '2018-02-21 09:10:20', 4,5 );
+INSERT INTO TicketUpdate VALUES (11, 'One too many options to choose from ', '2018-02-22 11:50:20', 4,null );
+
+
+
+

@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Task 4 </title>
+</head>
+<body>
+    <h1> All Open Tickets</h1>
+    <table style="border:4px dashed darkcyan">
+        <tr>
+            <th>ID</th><th>Problem</th><th>Priority</th><th>Last Update</th>
+        </tr>
+        
+        {% for row in rows %}
+            <tr>
+            {% for item in row %}
+                <td>{{item}}</td>
+            {%endfor%}
+            </tr>
+        {%endfor%}
+    </table><br>
+    <a href="/"> Go back! </a>
+</body>
+</html>

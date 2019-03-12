@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Task 6 </title>
+</head>
+<body>
+    <table style="border:4px dashed LightSeaGreen ">
+        <th> Original Problem</th>
+            <tr><td>{{html}}</td></tr>
+        <tr>
+            <th>Update message</th><th>Last Update</th><th>Author</th>
+        </tr>
+        {% for row in queryData %}
+            <tr>
+            {% for item in row %}
+                <td>{{item}}</td>
+                
+            {%endfor%}
+            </tr>
+        {%endfor%}
+    </table><br>
+    <a href="/"> Go back! </a>
+</body>
+</html>

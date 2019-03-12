@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Database Page </title>
+</head>
+<body>
+	<div id="tables">
+	<form action="addCustomer" method="post" >
+		<table style="border:2px dashed orange">
+			<tr>
+				<th>Add new customer</th>
+			</tr>
+			<tr>
+				<tr><td><input type="text" name="custID" placeholder="CustomerID"></td></tr>
+				<tr><td><input type="text" name="name" placeholder="Name"></td></tr>
+				<tr><td><input type="text" name="email" placeholder="eMail"></td></tr>
+				<tr><td><input type="submit" value="Action"></td></tr>
+			</tr>
+			
+		</table>
+	</form>
+	{{NewCust}}<br>
+	{{error}}
+	<form action="createNewTicket" method="post" >
+		<table style="border:2px dashed grey">
+			<tr>
+				<th>Create new support ticket</th>
+			</tr>
+			<tr>
+                <tr><td><input type="number" name="ticketID" placeholder="TicketID"></td></tr>
+                <tr><td><textarea rows="5" cols="50" name="problem" placeholder="Problem"></textarea></td></tr>
+                <tr><td><input type="text" name="status" placeholder="Status(Open/Closed)"></td></tr>
+                <tr><td><input type="number" name="priority" placeholder="Priority(1-3)"></td></tr>
+				<tr><td><input type="number" name="CustID" placeholder="CustomerID"></td></tr>
+				<tr><td><input type="number" name="ProductID" placeholder="ProductID"></td></tr>
+				<tr><td><input type="submit" name="addCust"></td></tr><br>
+			</tr>
+		</table>
+	</form>
+    {{confirmTicket}}<br>
+	{{errorNewTicket}}
+	<form action="updateTicket" method="post" >
+		<table style="border:2px dotted purple" >
+			<th> Update Ticket </th>
+			<tr>
+                <tr><td><input type="number" name="updateID" placeholder="TicketUpdateID"></td></tr>
+				<td><input type="text" name="updateMsg" placeholder="Update message" size="100"></td></tr>
+				<tr><td><input type="number" name="ticketID" placeholder="Ticket ID"></td></tr>
+				<tr><td><input type="number" name="staffID" placeholder="Staff ID"></td></tr>
+				<tr><td><input type="submit" name="Update"></td></tr>
+			</tr>	
+		</table>
+	</form>
+    {{success}}<br>
+    {{error2}}
+	<form action="listOpenTickets" method="get">
+		<table style="border:1px dashed blue">
+			<th>List open tickets</th>
+				<tr><td><input type="submit" name="listTickets" href="tastk4.html"></td></tr>
+		</table>
+	</form><br>
+	<form action="closeTicket" method="post">
+		<table style="border:2px dashed red">
+			<th>Close a ticket</th>
+			<tr><td><input type="text" name="ticketID" placeholder="TicketID"></td></tr>
+			</tr><td><input type="submit" name="close"></td></tr>
+		</table>
+        
+	</form>
+    {{successClose}}<br>
+    {{errorClose}}<br>
+	<form action="listProblem" method="post">
+		<table  style="border:2px dotted cyan">
+			<th>List original problem</th>
+			<tr><td><input type="number" name="ticketID" placeholder="TicketID"></td></tr>
+			<tr><td><input type="submit" name="listProblems"></td></tr>
+		</table>
+	</form>
+    {{problError}}<br>
+	<form action="produceReport" method="get" >
+		<table style="border:7px double brown">
+			<th>Report for closed tickets</th>
+			<tr><td><input type="submit" name="report"></td></tr>
+		</table>
+	</form>
+    {{produceFail}}<br>
+	<form action="removeCust" method="post" >
+		<table style="border:4px dashed #3680a0">
+			<th>Delete a customer</th>
+			<tr><td><input type="text" name="custID" placeholder="customerID"></td></tr>
+			<tr><td><input type="submit" name="deleteCust"></td></tr>
+		</table>
+	</form>
+    {{SuccessDelete}}<br>
+    {{FailDelete}}
+	</div>
+</body>
+</html>

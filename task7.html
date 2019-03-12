@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Task 7 </title>
+</head>
+<body>
+     <table style="border:4px dashed #F1C40F ">
+        <tr>
+            <th>TicketID</th><th>Closed Tickets</th><th>No Updates</th><th>First Response</th><th>Last Response</th>
+        </tr>   
+        {% for row in queryData %}
+            <tr>
+            {% for item in row %}
+                <td>{{item}}</td>
+            {%endfor%}
+            </tr>
+        {%endfor%}
+    </table><br>
+    <a href="/"> Go back! </a>
+</body>
+</html>
